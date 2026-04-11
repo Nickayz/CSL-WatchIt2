@@ -157,6 +157,7 @@ namespace WatchIt.Panels
                             else
                             {
                                 _problemPanel.Show();
+                                _problemPanel.ForceUpdateUI();
                             }
                         }
 
