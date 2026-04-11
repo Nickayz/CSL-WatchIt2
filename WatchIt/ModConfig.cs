@@ -56,6 +56,7 @@
         public bool ProblemAutoClose { get; set; } = true;
         public int ProblemMaxItems { get; set; } = 100;
         public bool UseClassicIcons { get; set; } = false;
+        public string FilteredProblems { get; set; } = ""; // I.e. those disabled.
 
         private static ModConfig instance;
 

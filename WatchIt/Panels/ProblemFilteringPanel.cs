@@ -29,7 +29,7 @@ namespace WatchIt.Panels
         private UICheckBox[] _checkboxes1;
         private UICheckBox[] _checkboxes2;
 
-        public Notification.ProblemStruct _problemComparator;
+        public static Notification.ProblemStruct _problemComparator = Notification.ProblemStruct.All;
 
         private static readonly PositionData<Notification.Problem1>[] _keyNotifications1 = Utils.GetOrderedEnumData<Notification.Problem1>("Text");
         private static readonly PositionData<Notification.Problem2>[] _keyNotifications2 = Utils.GetOrderedEnumData<Notification.Problem2>("Text");
@@ -55,8 +55,7 @@ namespace WatchIt.Panels
             try
             {
                 _notificationsAtlas = ResourceLoader.GetAtlas("Notifications");
-                _problemComparator = Notification.ProblemStruct.All;
-             
+                LoadConfig();
 
                 CreateUI();
             }
@@ -217,7 +216,8 @@ namespace WatchIt.Panels
                 }
                 for (int i = 0; i < _keyNotifications1.Length; i++)
                 {
-                    _checkboxes1[i] = CreateCheckBox(_problemFilteringScrollablePanel, _keyNotifications1[i].enumName);
+                    _checkboxes1[i] = CreateCheckBox(_problemFilteringScrollablePanel, _keyNotifications1[i].enumName,
+                        ( _problemComparator & _keyNotifications1[i].enumValue ).IsNotNone);
                 }
 
 
@@ -228,9 +228,9 @@ namespace WatchIt.Panels
                 }
                 for(int i=0; i < _keyNotifications2.Length; i++)
                 {
-                    _checkboxes2[i] = CreateCheckBox(_problemFilteringScrollablePanel, _keyNotifications2[i].enumName);
+                    _checkboxes2[i] = CreateCheckBox(_problemFilteringScrollablePanel, _keyNotifications2[i].enumName,
+                        (_problemComparator & _keyNotifications2[i].enumValue).IsNotNone);
                 }
-                               
 
             }
             catch (Exception e)
@@ -259,20 +259,60 @@ namespace WatchIt.Panels
             }
         }
 
-        private UICheckBox CreateCheckBox(UIComponent parent, string text)
+        private UICheckBox CreateCheckBox(UIComponent parent, string text, bool check)
         {
             UICheckBox checkBox = parent.AttachUIComponent(UITemplateManager.GetAsGameObject("OptionsCheckBoxTemplate")) as UICheckBox;
 
             checkBox.text = text;
-            checkBox.isChecked = true;
+            checkBox.isChecked = check;
 
             checkBox.eventCheckChanged += (component, eventParam) =>
             {
                 ForceUpdate();
+                SaveConfig();
             };
 
             return checkBox;
         }
 
+        private void SaveConfig()
+        {
+            List<string> disabled = new List<string>();
+            for (int i = 0; i < _keyNotifications1.Length; i++)
+                if(( _problemComparator & _keyNotifications1[i].enumValue ).IsNone )
+                    disabled.Add( _keyNotifications1[i].enumName );
+            for (int i = 0; i < _keyNotifications2.Length; i++)
+                if(( _problemComparator & _keyNotifications2[i].enumValue ).IsNone )
+                    disabled.Add( _keyNotifications2[i].enumName );
+
+            ModConfig.Instance.FilteredProblems = String.Join(",", disabled.ToArray());
+            ModConfig.Instance.Save();
+        }
+
+        public void LoadConfig()
+        {
+            Notification.ProblemStruct disabled = Notification.ProblemStruct.None;
+            string[] items = ModConfig.Instance.FilteredProblems.Split(',');
+            foreach( string item in items )
+            {
+                for (int i = 0; i < _keyNotifications1.Length; i++)
+                {
+                    if( item == _keyNotifications1[i].enumName )
+                    {
+                        disabled |= _keyNotifications1[i].enumValue;
+                        break;
+                    }
+                }
+                for (int i = 0; i < _keyNotifications2.Length; i++)
+                {
+                    if( item == _keyNotifications2[i].enumName )
+                    {
+                        disabled |= _keyNotifications2[i].enumValue;
+                        break;
+                    }
+                }
+            }
+            _problemComparator = Notification.ProblemStruct.All & ~(disabled);
+        }
     }
 }

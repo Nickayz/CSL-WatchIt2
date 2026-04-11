@@ -404,7 +404,7 @@ namespace WatchIt.Panels
                         {
                             building = buildingManager.m_buildings.m_buffer[problemManager.BuildingsWithProblems[i]];
 
-                            if ((building.m_problems & _problemFilteringPanel._problemComparator).IsNotNone)
+                            if ((building.m_problems & ProblemFilteringPanel._problemComparator).IsNotNone)
                             {
                                 _problemItems[ProblemsShown].UpdateProblemItem(problemManager.GetBuildingName(problemManager.BuildingsWithProblems[i]),
                                     problemManager.GetSprites(building), problemManager.GetBuildingInstanceID(problemManager.BuildingsWithProblems[i]),
@@ -422,7 +422,7 @@ namespace WatchIt.Panels
                         {
                             netNode = netManager.m_nodes.m_buffer[problemManager.NetNodesWithProblems[i]];
 
-                            if ((netNode.m_problems & _problemFilteringPanel._problemComparator).IsNotNone)
+                            if ((netNode.m_problems & ProblemFilteringPanel._problemComparator).IsNotNone)
                             {
                                 _problemItems[ProblemsShown].UpdateProblemItem(problemManager.GetNetNodeName(netNode), problemManager.GetSprites(netNode),
                                       problemManager.GetNetNodeInstanceID(problemManager.NetNodesWithProblems[i]), problemManager.GetPosition(netNode));
@@ -436,7 +436,7 @@ namespace WatchIt.Panels
                         {
                             netSegment = netManager.m_segments.m_buffer[problemManager.NetSegmentsWithProblems[i]];
 
-                            if ((netSegment.m_problems & _problemFilteringPanel._problemComparator).IsNotNone)
+                            if ((netSegment.m_problems & ProblemFilteringPanel._problemComparator).IsNotNone)
                             {
                                 _problemItems[i].UpdateProblemItem(problemManager.GetNetSegmentName(netSegment), problemManager.GetSprites(netSegment),
                                   problemManager.GetNetSegmentInstanceID(problemManager.NetSegmentsWithProblems[i]), problemManager.GetPosition(netSegment));

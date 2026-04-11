@@ -2,6 +2,7 @@ using ColossalFramework;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using WatchIt.Panels;
 
 namespace WatchIt.Managers
 {
@@ -238,7 +239,7 @@ namespace WatchIt.Managers
                 {
                     building = buildingManager.m_buildings.m_buffer[i];
                                         
-                    if (building.m_problems.IsNotNone)
+                    if ((building.m_problems & ProblemFilteringPanel._problemComparator).IsNotNone)
                     {
                         if (buildingManager.m_buildings.m_buffer[i].m_flags != Building.Flags.None)
                         {
