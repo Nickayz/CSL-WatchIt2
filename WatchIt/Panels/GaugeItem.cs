@@ -62,7 +62,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] GaugeItem:CreateGaugeItem -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] GaugeItem:CreateGaugeItem -> Exception: " + e.Message);
             }
         }
 
@@ -95,7 +95,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] GaugeItem:CreateAsAspect -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] GaugeItem:CreateAsAspect -> Exception: " + e.Message);
             }
         }
 
@@ -132,7 +132,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] GaugeItem:CreateAsPillar -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] GaugeItem:CreateAsPillar -> Exception: " + e.Message);
             }
         }
 
@@ -191,7 +191,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] GaugeItem:CreateNumericalDigits -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] GaugeItem:CreateNumericalDigits -> Exception: " + e.Message);
             }
         }
 
@@ -216,7 +216,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] GaugeItem:DestroyGaugeItem -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] GaugeItem:DestroyGaugeItem -> Exception: " + e.Message);
             }
         }
 
@@ -245,7 +245,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] GaugeItem:SetInfoMode -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] GaugeItem:SetInfoMode -> Exception: " + e.Message);
             }
         }
 
@@ -271,7 +271,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] GaugeItem:UpdateGaugeItem -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] GaugeItem:UpdateGaugeItem -> Exception: " + e.Message);
             }
         }
 
@@ -505,7 +505,6 @@ namespace WatchIt.Panels
                     case "ElementarySchool":
                         capacity = district.GetEducation1Capacity();
                         need = district.GetEducation1Need();
-                        need = district.GetEducation1Need();
                         break;
                     case "HighSchool":
                         capacity = district.GetEducation2Capacity();
@@ -580,7 +579,7 @@ namespace WatchIt.Panels
             {
                 return 0;
             }
-            return 100;
+            return 0;
         }
 
         private string GetAspectSpriteName(int percentage)

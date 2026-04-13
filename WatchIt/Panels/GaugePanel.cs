@@ -36,7 +36,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] GaugePanel:Awake -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] GaugePanel:Awake -> Exception: " + e.Message);
             }
         }
 
@@ -79,7 +79,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] GaugePanel:Awake -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] GaugePanel:Awake -> Exception: " + e.Message);
             }
         }
 
@@ -110,7 +110,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] GaugePanel:Update -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] GaugePanel:Update -> Exception: " + e.Message);
             }
         }
 
@@ -147,7 +147,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] GaugePanel:OnDestroy -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] GaugePanel:OnDestroy -> Exception: " + e.Message);
             }
         }
         public void ForceUpdateUI()
@@ -241,7 +241,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] GaugePanel:LoadResources -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] GaugePanel:LoadResources -> Exception: " + e.Message);
                 return null;
             }
         }
@@ -290,7 +290,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] GaugePanel:CreateUI -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] GaugePanel:CreateUI -> Exception: " + e.Message);
             }
         }
 
@@ -338,7 +338,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] GaugePanel:UpdateUI -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] GaugePanel:UpdateUI -> Exception: " + e.Message);
             }
         }
 
@@ -611,7 +611,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] GaugePanel:CreateOrUpdateGauges -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] GaugePanel:CreateOrUpdateGauges -> Exception: " + e.Message);
             }
         }
 
@@ -625,7 +625,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] GaugePanel:CreateGauge -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] GaugePanel:CreateGauge -> Exception: " + e.Message);
             }
 
             return gauge;
@@ -642,7 +642,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] GaugePanel:RefreshGauges -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] GaugePanel:RefreshGauges -> Exception: " + e.Message);
             }
         }
 

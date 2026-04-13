@@ -30,7 +30,7 @@ namespace WatchIt
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ModProperties:ResetPanelPosition -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ModProperties:ResetPanelPosition -> Exception: " + e.Message);
             }
         }
 
@@ -44,7 +44,7 @@ namespace WatchIt
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ModProperties:ResetWarningPanelPosition -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ModProperties:ResetWarningPanelPosition -> Exception: " + e.Message);
             }
         }
     }

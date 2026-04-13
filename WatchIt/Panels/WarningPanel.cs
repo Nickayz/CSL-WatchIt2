@@ -32,7 +32,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] WarningPanel:Awake -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] WarningPanel:Awake -> Exception: " + e.Message);
             }
         }
 
@@ -70,7 +70,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] WarningPanel:Start -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] WarningPanel:Start -> Exception: " + e.Message);
             }
         }
 
@@ -101,7 +101,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] WarningPanel:Update -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] WarningPanel:Update -> Exception: " + e.Message);
             }
         }
 
@@ -127,7 +127,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] WarningPanel:OnDestroy -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] WarningPanel:OnDestroy -> Exception: " + e.Message);
             }
         }
 
@@ -208,7 +208,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] WarningPanel:CreateUI -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] WarningPanel:CreateUI -> Exception: " + e.Message);
             }
         }
 
@@ -229,7 +229,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] WarningPanel:UpdateUI -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] WarningPanel:UpdateUI -> Exception: " + e.Message);
             }
         }
 
@@ -249,7 +249,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] WarningPanel:CreateWarnings -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] WarningPanel:CreateWarnings -> Exception: " + e.Message);
             }
         }
 
@@ -261,7 +261,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] WarningPanel:UpdateWarnings -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] WarningPanel:UpdateWarnings -> Exception: " + e.Message);
             }
         }
         private WarningItem CreateWarning(string name)
@@ -274,7 +274,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] WarningPanel:CreateWarning -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] WarningPanel:CreateWarning -> Exception: " + e.Message);
             }
 
             return warningItem;
@@ -352,7 +352,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] WarningPanel:RefreshWarnings -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] WarningPanel:RefreshWarnings -> Exception: " + e.Message);
             }
         }
     }
