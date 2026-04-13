@@ -45,7 +45,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ProblemPanel:Awake -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ProblemPanel:Awake -> Exception: " + e.Message);
             }
         }
 
@@ -67,7 +67,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ProblemPanel:Start -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ProblemPanel:Start -> Exception: " + e.Message);
             }
         }
 
@@ -98,7 +98,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ProblemPanel:Update -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ProblemPanel:Update -> Exception: " + e.Message);
             }
         }
 
@@ -175,7 +175,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ProblemPanel:OnDestroy -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ProblemPanel:OnDestroy -> Exception: " + e.Message);
             }
         }
         public void ForceUpdateUI()
@@ -313,7 +313,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ProblemPanel:CreateUI -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ProblemPanel:CreateUI -> Exception: " + e.Message);
             }
         }
 
@@ -326,7 +326,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ProblemPanel:UpdateUI -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ProblemPanel:UpdateUI -> Exception: " + e.Message);
             }
         }
 
@@ -346,7 +346,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ProblemPanel:CreateProblems -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ProblemPanel:CreateProblems -> Exception: " + e.Message);
             }
         }
 
@@ -358,7 +358,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ProblemPanel:UpdateProblems -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ProblemPanel:UpdateProblems -> Exception: " + e.Message);
             }
         }
 
@@ -372,7 +372,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ProblemPanel:CreateProblem -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ProblemPanel:CreateProblem -> Exception: " + e.Message);
             }
 
             return problemItem;
@@ -462,7 +462,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ProblemPanel:RefreshProblems -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ProblemPanel:RefreshProblems -> Exception: " + e.Message);
             }
         }
     }

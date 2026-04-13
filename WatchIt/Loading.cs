@@ -58,7 +58,7 @@ namespace WatchIt
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] Loading:OnLevelLoaded -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] Loading:OnLevelLoaded -> Exception: " + e.Message);
             }
         }
 
@@ -94,7 +94,7 @@ namespace WatchIt
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] Loading:OnLevelUnloading -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] Loading:OnLevelUnloading -> Exception: " + e.Message);
             }
         }
     }

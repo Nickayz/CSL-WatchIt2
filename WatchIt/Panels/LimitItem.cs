@@ -89,7 +89,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] LimitItem:CreateLimitItem -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] LimitItem:CreateLimitItem -> Exception: " + e.Message);
             }
         }
 
@@ -124,7 +124,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] LimitItem:DestroyLimitItem -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] LimitItem:DestroyLimitItem -> Exception: " + e.Message);
             }
         }
 
@@ -141,7 +141,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] LimitItem:UpdateLimitItem -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] LimitItem:UpdateLimitItem -> Exception: " + e.Message);
             }
         }
 
@@ -301,7 +301,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] LimitItem:GetAmountAndCapacity -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] LimitItem:GetAmountAndCapacity -> Exception: " + e.Message);
 
                 amount = 0;
                 capacity = 0;

@@ -27,7 +27,7 @@ public abstract class Configuration<C> where C : class, new()
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] Configuration:Load -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] Configuration:Load -> Exception: " + e.Message);
             }
         }
         return instance ?? (instance = new C());
@@ -52,7 +52,7 @@ public abstract class Configuration<C> where C : class, new()
         }
         catch (Exception e)
         {
-            Debug.Log("[Watch It!] Configuration:Save -> Exception: " + e.Message);
+            Debug.Log("[Watch It! 2] Configuration:Save -> Exception: " + e.Message);
         }
     }
 
@@ -65,7 +65,7 @@ public abstract class Configuration<C> where C : class, new()
         }
         else
         {
-            Debug.Log("[Watch It!] Configuration:GetConfigPath -> ConfigurationPath attribute missing in " + typeof(C).Name);
+            Debug.Log("[Watch It! 2] Configuration:GetConfigPath -> ConfigurationPath attribute missing in " + typeof(C).Name);
             return typeof(C).Name + ".xml";
         }
     }

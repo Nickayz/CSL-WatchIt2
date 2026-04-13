@@ -32,7 +32,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] LimitPanel:Awake -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] LimitPanel:Awake -> Exception: " + e.Message);
             }
         }
 
@@ -46,7 +46,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] LimitPanel:Start -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] LimitPanel:Start -> Exception: " + e.Message);
             }
         }
 
@@ -77,7 +77,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] LimitPanel:Update -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] LimitPanel:Update -> Exception: " + e.Message);
             }
         }
 
@@ -131,7 +131,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] LimitPanel:OnDestroy -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] LimitPanel:OnDestroy -> Exception: " + e.Message);
             }
         }
 
@@ -199,7 +199,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] LimitPanel:CreateUI -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] LimitPanel:CreateUI -> Exception: " + e.Message);
             }
         }
         public void ForceUpdateUI()
@@ -216,7 +216,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] LimitPanel:UpdateUI -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] LimitPanel:UpdateUI -> Exception: " + e.Message);
             }
         }
 
@@ -253,7 +253,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] LimitPanel:CreateLimits -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] LimitPanel:CreateLimits -> Exception: " + e.Message);
             }
         }
 
@@ -265,7 +265,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] LimitPanel:UpdateLimits -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] LimitPanel:UpdateLimits -> Exception: " + e.Message);
             }
         }
 
@@ -279,7 +279,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] LimitPanel:CreateLimit -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] LimitPanel:CreateLimit -> Exception: " + e.Message);
             }
 
             return limitItem;
@@ -298,7 +298,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] LimitPanel:UpdateLimits -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] LimitPanel:UpdateLimits -> Exception: " + e.Message);
             }
         }
     }
