@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputPath>..</OutputPath>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <AssemblyVersion>2025.0620.1</AssemblyVersion>
+    <AssemblyVersion>2026.04.13</AssemblyVersion>
     <Deterministic>false</Deterministic>
     <TargetFramework>net35</TargetFramework>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,11 +12,21 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WatchIt</RootNamespace>
-    <AssemblyName>WatchItFork</AssemblyName>
+    <AssemblyName>WatchIt2</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -33,18 +43,26 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>/home/steam/.local/share/Steam/steamapps/common/Cities_Skylines/Cities_Data/Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>E:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="ColossalManaged">
-      <HintPath>/home/steam/.local/share/Steam/steamapps/common/Cities_Skylines/Cities_Data/Managed\ColossalManaged.dll</HintPath>
+      <HintPath>E:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\ColossalManaged.dll</HintPath>
     </Reference>
     <Reference Include="EManagersLib.API">
       <HintPath>..\EManagersLib.API.dll</HintPath>
     </Reference>
     <Reference Include="ICities">
-      <HintPath>/home/steam/.local/share/Steam/steamapps/common/Cities_Skylines/Cities_Data/Managed\ICities.dll</HintPath>
+      <HintPath>E:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\ICities.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -53,10 +71,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
-      <HintPath>/home/steam/.local/share/Steam/steamapps/common/Cities_Skylines/Cities_Data/Managed\UnityEngine.dll</HintPath>
+      <HintPath>E:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>/home/steam/.local/share/Steam/steamapps/common/Cities_Skylines/Cities_Data/Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>E:\SteamLibrary\steamapps\common\Cities_Skylines\Cities_Data\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

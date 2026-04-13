@@ -36,7 +36,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] WarningItem:CreateWarningItem -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] WarningItem:CreateWarningItem -> Exception: " + e.Message);
             }
         }
 
@@ -59,7 +59,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] WarningItem:DestroyWarningItem -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] WarningItem:DestroyWarningItem -> Exception: " + e.Message);
             }
         }
 
@@ -71,7 +71,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] WarningItem:Show -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] WarningItem:Show -> Exception: " + e.Message);
             }
         }
 
@@ -83,7 +83,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] WarningItem:Hide -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] WarningItem:Hide -> Exception: " + e.Message);
             }
         }
 
@@ -96,7 +96,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] WarningItem:UpdateWarningItem -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] WarningItem:UpdateWarningItem -> Exception: " + e.Message);
             }
         }
     }

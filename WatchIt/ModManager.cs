@@ -23,7 +23,7 @@ namespace WatchIt
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ModManager:Awake -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ModManager:Awake -> Exception: " + e.Message);
             }
         }
 
@@ -55,7 +55,7 @@ namespace WatchIt
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ModManager:Start -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ModManager:Start -> Exception: " + e.Message);
             }
         }
 
@@ -92,7 +92,7 @@ namespace WatchIt
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ModManager:Update -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ModManager:Update -> Exception: " + e.Message);
             }
         }
 
@@ -104,7 +104,7 @@ namespace WatchIt
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ModManager:OnDestroy -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ModManager:OnDestroy -> Exception: " + e.Message);
             }
         }
 
@@ -116,7 +116,7 @@ namespace WatchIt
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ModManager:CreateUI -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ModManager:CreateUI -> Exception: " + e.Message);
             }
         }
 
@@ -128,7 +128,7 @@ namespace WatchIt
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ModManager:UpdateUI -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ModManager:UpdateUI -> Exception: " + e.Message);
             }
         }
     }

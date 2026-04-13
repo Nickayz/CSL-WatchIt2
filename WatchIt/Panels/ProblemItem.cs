@@ -96,7 +96,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ProblemItem:CreateProblemItem -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ProblemItem:CreateProblemItem -> Exception: " + e.Message);
             }
         }
         public void DestroyProblemItem()
@@ -128,7 +128,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ProblemItem:DestroyProblemItem -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ProblemItem:DestroyProblemItem -> Exception: " + e.Message);
             }
         }
 
@@ -140,7 +140,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ProblemItem:Show -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ProblemItem:Show -> Exception: " + e.Message);
             }
         }
 
@@ -152,7 +152,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ProblemItem:Hide -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ProblemItem:Hide -> Exception: " + e.Message);
             }
         }
 
@@ -180,7 +180,7 @@ namespace WatchIt.Panels
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It!] ProblemItem:UpdateProblemItem -> Exception: " + e.Message);
+                Debug.Log("[Watch It! 2] ProblemItem:UpdateProblemItem -> Exception: " + e.Message);
             }
         }
 
