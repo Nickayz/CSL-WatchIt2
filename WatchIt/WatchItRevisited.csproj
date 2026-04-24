@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputPath>..</OutputPath>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <AssemblyVersion>2026.04.13</AssemblyVersion>
+    <AssemblyVersion>2026.04.24</AssemblyVersion>
     <Deterministic>false</Deterministic>
     <TargetFramework>net35</TargetFramework>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,7 +12,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WatchIt</RootNamespace>
-    <AssemblyName>WatchIt2</AssemblyName>
+    <AssemblyName>WatchItRevisited</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Platforms>AnyCPU;x64</Platforms>
@@ -211,7 +211,14 @@
     <Content Include="Icons\UniversityClassic.png" />
     <Content Include="Icons\WaterClassic.png" />
   </ItemGroup>
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="sh -c 'rm -rf &quot;/home/steam/.local/share/Colossal Order/Cities_Skylines/Addons/Mods/$(ProjectName)/*&quot;; mkdir -p &quot;/home/steam/.local/share/Colossal Order/Cities_Skylines/Addons/Mods/$(ProjectName)&quot;; cp &quot;$(TargetPath)&quot; &quot;/home/steam/.local/share/Colossal Order/Cities_Skylines/Addons/Mods/$(ProjectName)/&quot;;cp &quot;$(TargetDir)EManagersLib.API.dll&quot; &quot;/home/steam/.local/share/Colossal Order/Cities_Skylines/Addons/Mods/$(ProjectName)/&quot;'" />
-  </Target>
+	<Target Name="PostBuild" AfterTargets="Build">
+		<PropertyGroup>
+			<CSModsDir>$(LOCALAPPDATA)\Colossal Order\Cities_Skylines\Addons\Mods\$(AssemblyName)</CSModsDir>
+		</PropertyGroup>
+		<MakeDir Directories="$(CSModsDir)" Condition=" '$(CSModsDir)' != '' " />
+		<Delete Files="$(CSModsDir)\$(TargetFileName)" Condition="Exists('$(CSModsDir)\$(TargetFileName)')" />
+		<Delete Files="$(CSModsDir)\EManagersLib.API.dll" Condition="Exists('$(CSModsDir)\EManagersLib.API.dll')" />
+		<Copy SourceFiles="$(TargetPath)" DestinationFiles="$(CSModsDir)\$(TargetFileName)" />
+		<Copy SourceFiles="$(MSBuildProjectDirectory)\..\EManagersLib.API.dll" DestinationFiles="$(CSModsDir)\EManagersLib.API.dll" Condition="Exists('$(MSBuildProjectDirectory)\..\EManagersLib.API.dll')" />
+	</Target>
 </Project>
