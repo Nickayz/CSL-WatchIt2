@@ -288,7 +288,7 @@ namespace WatchIt.Managers
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It! 2] ProblemManager:Update -> Exception: " + e.Message);
+                Debug.Log("[Watch It! Revisited] ProblemManager:Update -> Exception: " + e.Message);
             }
         }
 
@@ -342,7 +342,7 @@ namespace WatchIt.Managers
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It! 2] ProblemManager:UpdateProblemTypes -> Exception: " + e.Message);
+                Debug.Log("[Watch It! Revisited] ProblemManager:UpdateProblemTypes -> Exception: " + e.Message);
             }
         }
 
@@ -378,7 +378,7 @@ namespace WatchIt.Managers
             }
             catch (Exception e)
             {
-                Debug.Log("[Watch It! 2] ProblemManager:AddOrUpdateProblemType -> Exception: " + e.Message);
+                Debug.Log("[Watch It! Revisited] ProblemManager:AddOrUpdateProblemType -> Exception: " + e.Message);
             }
         }
     }
